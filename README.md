@@ -9,3 +9,6 @@ It provides three major classes:
 * `ZacWireInputChannel` received byte packets over ZACWire protocol (low-level handler for TsicInputChannel)
 
 See `example.py` for API usage or start `tsic.py <gpio-bcm> [--loop]` to read temperatures from a GPIO pin (Broadcom numbering).
+
+Greetings from Bavaria  
+Holger Fleischmann
