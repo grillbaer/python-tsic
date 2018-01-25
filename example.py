@@ -20,7 +20,7 @@ pi = pigpio.pi()
 tsic = TsicInputChannel(pigpio_pi=pi, gpio=17)
 
 print('\nA. Single measurement:')
-print(str(tsic.measure_once(timeout=1.0)))
+print(tsic.measure_once(timeout=1.0))
 
 print('\nB. All measurements for 1 second:')
 tsic.start(lambda measurement: print(measurement))
