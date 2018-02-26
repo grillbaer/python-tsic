@@ -10,7 +10,7 @@ __copyright__ = 'Copyright 2018, Holger Fleischmann, Bavaria/Germany'
 __license__ = 'Apache License 2.0'
 
 import pigpio
-from tsic import TsicInputChannel
+from tsic import TsicInputChannel, Measurement
 import time
 
 # TsicInputChannel and ZacWireInputChannel require pigpio
@@ -33,6 +33,10 @@ print('\nC. One measurement per second for 3 seconds:')
 with tsic:
     for i in range(3):
         time.sleep(1)
-        print('{:d} {:.1f}°C'.format(i+1, tsic.measurement.degree_celsius))
+        measurement = tsic.measurement
+        if measurement == Measurement.UNDEF:
+            print(measurement)
+        else:
+            print('{:d} {:.1f}°C'.format(i+1, measurement.degree_celsius))
 
 pi.stop()
