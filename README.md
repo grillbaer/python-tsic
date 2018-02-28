@@ -11,4 +11,4 @@ It provides three major classes:
 See `example.py` for API usage or start `tsic.py <gpio-bcm> [--loop]` to read temperatures from a GPIO pin (Broadcom numbering).
 
 Greetings from Bavaria  
-Holger Fleischmann
+Holger
