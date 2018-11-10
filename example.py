@@ -10,14 +10,14 @@ __copyright__ = 'Copyright 2018, Holger Fleischmann, Bavaria/Germany'
 __license__ = 'Apache License 2.0'
 
 import pigpio
-from tsic import TsicInputChannel, Measurement
+from tsic import TsicInputChannel, Measurement, TSIC306
 import time
 
 # TsicInputChannel and ZacWireInputChannel require pigpio
 # for GPIO access with precise timing:
 pi = pigpio.pi()
 
-tsic = TsicInputChannel(pigpio_pi=pi, gpio=17)
+tsic = TsicInputChannel(pigpio_pi=pi, gpio=17, tsic_type=TSIC306)
 
 print('\nA. Single measurement:')
 print(tsic.measure_once(timeout=1.0))
