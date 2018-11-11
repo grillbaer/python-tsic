@@ -21,7 +21,7 @@ See `example.py` for API usage or start `tsic.py <gpio-bcm> [--type {206,506,716
 
 Example:
 ```
-pi@raspi3:~/python-tsic $ ./tsic.py 19 --type 306
+pi@raspi3:~/python-tsic $ sudo ./tsic.py 19 --type 306
 Receiving data from TSic 206/306...
 Measurement 17.90°C at 2018-11-10 16:16:11.419573
 ```
