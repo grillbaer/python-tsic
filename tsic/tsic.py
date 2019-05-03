@@ -5,16 +5,26 @@ TSIC temperature sensor and ZACWire protocol support for Raspberry PI.
 May be used as a command line tool for testing TSIC input.
 """
 
-__all__ = [ 'ZacWireInputChannel', 'Measurement', 'TsicInputChannel', 'Error', 'PigpioNotConnectedError' ]
+__all__ = [
+    'ZacWireInputChannel', 
+    'Measurement',
+    'TsicInputChannel', 
+    'Error',
+    'PigpioNotConnectedError', 
+    'TSIC206',
+    'TSIC306',
+    'TSIC306',
+    'TSIC716'
+]
 
 __author__ = 'Holger Fleischmann'
-__copyright__ = 'Copyright 2018, Holger Fleischmann, Bavaria/Germany'
+__copyright__ = 'Copyright 2019, Holger Fleischmann, Bavaria/Germany'
 __license__ = 'Apache License 2.0'
 
 from datetime import datetime
 from functools import partial
-import argparse
 import logging
+import argparse
 
 import pigpio
 import threading
@@ -379,8 +389,7 @@ class TsicInputChannel(object):
         return self.__class__.__name__ + ' for GPIO ' + str(self.__zacwire_channel.gpio)
 
 
-if __name__ == '__main__':
-    
+def main():
     tsic_types = { '206' : TSIC206,
                    '306' : TSIC306,
                    '506' : TSIC506,
@@ -413,3 +422,7 @@ if __name__ == '__main__':
         pass
     finally:
         pi.stop()
+
+
+if __name__ == '__main__':
+    main()

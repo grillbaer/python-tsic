@@ -6,12 +6,13 @@ on a Raspberry PI.
 """
 
 __author__ = 'Holger Fleischmann'
-__copyright__ = 'Copyright 2018, Holger Fleischmann, Bavaria/Germany'
+__copyright__ = 'Copyright 2019, Holger Fleischmann, Bavaria/Germany'
 __license__ = 'Apache License 2.0'
 
-import pigpio
-from tsic import TsicInputChannel, Measurement, TSIC306
 import time
+import pigpio
+
+from tsic import TsicInputChannel, Measurement, TSIC306
 
 # TsicInputChannel and ZacWireInputChannel require pigpio
 # for GPIO access with precise timing:
