@@ -15,7 +15,7 @@ The package `tsic` requires Python 3 and the great library `pigpio` for GPIO acc
 
 ## Installation
 
-Install from Python package index [PyPI](https://pypi.org):
+Install from Python package index [PyPI](https://pypi.org/project/tsic/):
 ```
 pip3 install tsic
 ```
