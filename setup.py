@@ -1,11 +1,12 @@
 import setuptools
+import codecs
 
-with open("README.md", "r") as file:
+with codecs.open("README.md", "r", encoding='utf8') as file:
     long_description = file.read()
 
 setuptools.setup(
     name="tsic",
-    version="1.2.0",
+    version="2.0.0",
     author="Grillbaer",
     author_email="holgflei+tsic@gmail.com",
     description="Receive temperature readings from TSic 206/306/506/716 sensor chips on Raspberry Pi",
