@@ -6,7 +6,7 @@ with codecs.open("README.md", "r", encoding='utf8') as file:
 
 setuptools.setup(
     name="tsic",
-    version="2.0.0",
+    version="2.0.1",
     author="Grillbaer",
     author_email="holgflei+tsic@gmail.com",
     description="Receive temperature readings from TSic 206/306/506/716 sensor chips on Raspberry Pi",
