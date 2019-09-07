@@ -3,4 +3,4 @@ python:
   - "3.6"
 
 install:
-  - pip install -r pigpio
+  - pip install pigpio
