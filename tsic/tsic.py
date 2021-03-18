@@ -13,12 +13,12 @@ __all__ = [
     'PigpioNotConnectedError', 
     'TSIC206',
     'TSIC306',
-    'TSIC306',
+    'TSIC506',
     'TSIC716'
 ]
 
 __author__ = 'Holger Fleischmann'
-__copyright__ = 'Copyright 2019, Holger Fleischmann, Bavaria/Germany'
+__copyright__ = 'Copyright 2021, Holger Fleischmann, Bavaria/Germany'
 __license__ = 'Apache License 2.0'
 
 from datetime import datetime
