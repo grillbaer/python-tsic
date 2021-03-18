@@ -5,7 +5,7 @@ Receive temperature readings from TSic sensor chips connected to Raspberry Pi GP
 Supported:
 * TSic 206/306
 * TSic 506
-* TSic 706
+* TSic 716
 
 Don't forget the bypass capacitor as near as possible to the sensor's power supply pins to get stable behavior.
 
